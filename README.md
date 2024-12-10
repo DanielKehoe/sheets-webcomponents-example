@@ -1,12 +1,11 @@
 # sheets-webcomponents-example
 
-A web application for managing podcast guest bookings and analyzing podcast information. Built with web components and Google APIs, deployed on Cloudflare.
+An example application demonstrating use of the Google Sheets API. Built with web components and Google APIs, deployed on Cloudflare.
 
 ## Features
 
 - Google OAuth authentication
-- Automated Google Sheets creation for lead tracking
-- URL content analysis and processing
+- Automated Google Sheets creation
 - Error tracking and display
 
 ## Technical Stack
@@ -88,14 +87,6 @@ There's a CHANGELOG as well as documentation in the `docs` directory.
 │   └── functional_specifications.md
 ```
 
-## Browser Support
-
-- Chrome (last 2 versions)
-- Firefox (last 2 versions)
-- Safari (last 2 versions)
-- Edge (last 2 versions)
-- Mobile browsers supported
-
 ## Security
 
 - All API calls routed through Cloudflare Worker
@@ -106,5 +97,5 @@ There's a CHANGELOG as well as documentation in the `docs` directory.
 
 ## License
 
-Proprietary software. All rights reserved.
-No license granted for use, modification, or distribution.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
