@@ -1,0 +1,7 @@
+### macOS
+
+.trash/
+.DS_Store
+
+### environment variables
+.env

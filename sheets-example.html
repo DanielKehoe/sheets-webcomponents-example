@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sheets-webcomponents-example</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style type="text/tailwindcss">
+            @layer base {
+                html {
+                    font-family: Inter, system-ui, sans-serif;
+                }
+            }
+        </style>
+        <!-- Add both Google libraries -->
+        <!-- Make sure these are in this order -->
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script
+            src="https://accounts.google.com/gsi/client"
+            async
+            defer
+        ></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js"
+        ></script>
+        <script
+            type="module"
+            src="/assets/scripts/sheets-example.js"
+        ></script>
+        <script type="module" src="/assets/scripts/greater-errors.js"></script>
+        <script
+            type="module"
+            src="/assets/scripts/greater-create-sheet.js"
+        ></script>
+        <script
+            type="module"
+            src="/assets/scripts/greater-fetch-analyze.js"
+        ></script>
+    </head>
+    <body class="bg-slate-50 min-h-screen flex flex-col">
+        <greater-errors></greater-errors>
+        <main class="flex-grow container mx-auto max-w-2xl px-4 py-8">
+            <sheets-example></sheets-example>
+        </main>
+    </body>
+</html>
